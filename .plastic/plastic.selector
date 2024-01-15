@@ -1,0 +1,4 @@
+repository "graduation game@nagani@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
