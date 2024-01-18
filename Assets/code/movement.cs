@@ -5,12 +5,12 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
 
-    public float runSpeed = 20.0f;
+    public float walkSpeed = 5f;
     Rigidbody2D rb;
     public Animator anim;
-    public float hf = 0.0f;
-    public float vf = 0.0f;
-    public Vector2 movementVec;
+    private float hf = 0.0f;
+    private float vf = 0.0f;
+    private Vector2 movementVec;
 
     bool facingRight = true;
 
@@ -54,9 +54,7 @@ public class movement : MonoBehaviour
 
     void FixedUpdate()
     {
-
-       
-        rb.velocity = new Vector2(movementVec.x * runSpeed, movementVec.y * runSpeed);
+        rb.velocity = new Vector2(movementVec.x * walkSpeed, movementVec.y * walkSpeed);
 
         
     }
