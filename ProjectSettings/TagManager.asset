@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1315039757
+    locked: 0
+  - name: Food
+    uniqueID: 966454457
+    locked: 0
+  - name: People
+    uniqueID: 3771597133
+    locked: 0
+  - name: Player
+    uniqueID: 964411733
+    locked: 0
