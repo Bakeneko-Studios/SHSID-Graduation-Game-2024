@@ -11,7 +11,7 @@ public class SubwaySurferMovement : MonoBehaviour
     private int currentLane = 1;
     private Rigidbody rb;
     public float jumpForce = 5f;
-    public float groundCheckDistance = 0.01f;
+    public float groundCheckDistance = 0.1f;
     public LayerMask groundLayer;
     public Transform Player;
     //public bool isGrounded = true;
@@ -23,7 +23,7 @@ public class SubwaySurferMovement : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.D) && currentLane < LanePosition.Length) {
+        if (Input.GetKeyDown(KeyCode.D) && currentLane < LanePosition.Length - 1) {
             currentLane ++;
         }
         else if (Input.GetKeyDown(KeyCode.A) && currentLane > 0) {

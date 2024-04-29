@@ -255,7 +255,7 @@ MonoBehaviour:
   laneSpeed: 25
   distanceTraveled: 0
   jumpForce: 5
-  groundCheckDistance: 1
+  groundCheckDistance: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
